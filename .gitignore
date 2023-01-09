@@ -1,0 +1,7 @@
+# Project exclude paths
+/BasicLogin/.gradle/
+/Beginning/.gradle/
+/Beginning/comp/common-utils/build/
+/Beginning/comp/common-utils/build/classes/java/main/
+/Beginning/server/basic-test/build/
+/Beginning/server/basic-test/build/classes/java/main/

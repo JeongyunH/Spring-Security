@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/BasicLogin" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/BasicLogin" />
+            <option value="$PROJECT_DIR$/BasicLogin/server/basic-test" />
+            <option value="$PROJECT_DIR$/BasicLogin/server/login-basic" />
+            <option value="$PROJECT_DIR$/BasicLogin/server/login-custom-filter" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Beginning" />
+        <option name="gradleJvm" value="11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Beginning" />
+            <option value="$PROJECT_DIR$/Beginning/comp/common-utils" />
+            <option value="$PROJECT_DIR$/Beginning/server/basic-test" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
