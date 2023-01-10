@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -23,6 +24,18 @@
             <option value="$PROJECT_DIR$/Beginning" />
             <option value="$PROJECT_DIR$/Beginning/comp/common-utils" />
             <option value="$PROJECT_DIR$/Beginning/server/basic-test" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/LoginCustomFilter" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/LoginCustomFilter" />
+            <option value="$PROJECT_DIR$/LoginCustomFilter/server/basic-test" />
+            <option value="$PROJECT_DIR$/LoginCustomFilter/server/login-basic" />
+            <option value="$PROJECT_DIR$/LoginCustomFilter/server/login-custom-filter" />
           </set>
         </option>
       </GradleProjectSettings>

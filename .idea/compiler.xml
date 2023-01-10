@@ -7,15 +7,24 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.16/6dc192c7f93ec1853f70d59d8a6dcf94eb42866/lombok-1.18.16.jar" />
         </processorPath>
-        <module name="Basic-Login.server-login-custom-filter.test" />
-        <module name="Basic-Login.server-login-custom-filter.main" />
-        <module name="Basic-Login.server-basic-test.main" />
-        <module name="Basic-Login.server-login-basic.main" />
-        <module name="Basic-Login.server-basic-test.test" />
-        <module name="Basic-Login.server-login-basic.test" />
+        <module name="Login-Custom-Filter.server-login-basic.main" />
+        <module name="Login-Custom-Filter.server-basic-test.main" />
+        <module name="Login-Custom-Filter.server-login-custom-filter.test" />
+        <module name="Login-Custom-Filter.server-basic-test.test" />
+        <module name="Login-Custom-Filter.server-login-basic.test" />
+        <module name="Login-Custom-Filter.server-login-custom-filter.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="LoginCustomFilter.server-basic-test" target="11" />
+      <module name="LoginCustomFilter.server-basic-test.main" target="11" />
+      <module name="LoginCustomFilter.server-basic-test.test" target="11" />
+      <module name="LoginCustomFilter.server-login-basic" target="11" />
+      <module name="LoginCustomFilter.server-login-basic.main" target="11" />
+      <module name="LoginCustomFilter.server-login-basic.test" target="11" />
+      <module name="LoginCustomFilter.server-login-custom-filter" target="11" />
+      <module name="LoginCustomFilter.server-login-custom-filter.main" target="11" />
+      <module name="LoginCustomFilter.server-login-custom-filter.test" target="11" />
       <module name="SpringBoot-Security.comp-common-utils" target="11" />
       <module name="SpringBoot-Security.comp-common-utils.main" target="11" />
       <module name="SpringBoot-Security.comp-common-utils.test" target="11" />
