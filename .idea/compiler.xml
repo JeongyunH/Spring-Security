@@ -25,6 +25,15 @@
       <module name="LoginCustomFilter.server-login-custom-filter" target="11" />
       <module name="LoginCustomFilter.server-login-custom-filter.main" target="11" />
       <module name="LoginCustomFilter.server-login-custom-filter.test" target="11" />
+      <module name="sp-fastcampus-spring-sec.server-basic-test" target="11" />
+      <module name="sp-fastcampus-spring-sec.server-basic-test.main" target="11" />
+      <module name="sp-fastcampus-spring-sec.server-basic-test.test" target="11" />
+      <module name="sp-fastcampus-spring-sec.server-login-basic" target="11" />
+      <module name="sp-fastcampus-spring-sec.server-login-basic.main" target="11" />
+      <module name="sp-fastcampus-spring-sec.server-login-basic.test" target="11" />
+      <module name="sp-fastcampus-spring-sec.server-login-custom-filter" target="11" />
+      <module name="sp-fastcampus-spring-sec.server-login-custom-filter.main" target="11" />
+      <module name="sp-fastcampus-spring-sec.server-login-custom-filter.test" target="11" />
       <module name="SpringBoot-Security.comp-common-utils" target="11" />
       <module name="SpringBoot-Security.comp-common-utils.main" target="11" />
       <module name="SpringBoot-Security.comp-common-utils.test" target="11" />
