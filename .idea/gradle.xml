@@ -52,6 +52,20 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/MultiChainProxy" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/MultiChainProxy" />
+            <option value="$PROJECT_DIR$/MultiChainProxy/server/basic-authentication-test" />
+            <option value="$PROJECT_DIR$/MultiChainProxy/server/basic-test" />
+            <option value="$PROJECT_DIR$/MultiChainProxy/server/login-basic" />
+            <option value="$PROJECT_DIR$/MultiChainProxy/server/login-custom-filter" />
+            <option value="$PROJECT_DIR$/MultiChainProxy/server/login-multi-chain" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
