@@ -63,6 +63,7 @@
             <option value="$PROJECT_DIR$/MultiChainProxy/server/login-basic" />
             <option value="$PROJECT_DIR$/MultiChainProxy/server/login-custom-filter" />
             <option value="$PROJECT_DIR$/MultiChainProxy/server/login-multi-chain" />
+            <option value="$PROJECT_DIR$/MultiChainProxy/web/student-teacher" />
           </set>
         </option>
       </GradleProjectSettings>
