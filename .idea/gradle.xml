@@ -5,6 +5,19 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/BasicAuthenticationFilter" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/BasicAuthenticationFilter" />
+            <option value="$PROJECT_DIR$/BasicAuthenticationFilter/server/basic-authentication-test" />
+            <option value="$PROJECT_DIR$/BasicAuthenticationFilter/server/basic-test" />
+            <option value="$PROJECT_DIR$/BasicAuthenticationFilter/server/login-basic" />
+            <option value="$PROJECT_DIR$/BasicAuthenticationFilter/server/login-custom-filter" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/BasicLogin" />
         <option name="modules">
           <set>

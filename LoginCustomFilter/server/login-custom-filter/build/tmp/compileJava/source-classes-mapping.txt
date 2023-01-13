@@ -20,9 +20,9 @@ com/sp/fc/web/teacher/TeacherAuthenticationToken.java
  com.sp.fc.web.teacher.TeacherAuthenticationToken$TeacherAuthenticationTokenBuilder
 com/sp/fc/web/teacher/TeacherManager.java
  com.sp.fc.web.teacher.TeacherManager
-com/sp/fc/web/config/CustomLoginFilter.java
- com.sp.fc.web.config.CustomLoginFilter
 com/sp/fc/web/student/StudentManager.java
  com.sp.fc.web.student.StudentManager
 com/sp/fc/web/config/SecurityConfig.java
  com.sp.fc.web.config.SecurityConfig
+com/sp/fc/web/config/CustomLoginFilter.java
+ com.sp.fc.web.config.CustomLoginFilter
