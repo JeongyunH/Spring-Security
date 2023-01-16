@@ -67,6 +67,24 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/UserDetails" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/UserDetails" />
+            <option value="$PROJECT_DIR$/UserDetails/comp/user-admin" />
+            <option value="$PROJECT_DIR$/UserDetails/server/basic-authentication-test" />
+            <option value="$PROJECT_DIR$/UserDetails/server/basic-test" />
+            <option value="$PROJECT_DIR$/UserDetails/server/login-basic" />
+            <option value="$PROJECT_DIR$/UserDetails/server/login-custom-filter" />
+            <option value="$PROJECT_DIR$/UserDetails/server/login-multi-chain" />
+            <option value="$PROJECT_DIR$/UserDetails/server/login-userdetails" />
+            <option value="$PROJECT_DIR$/UserDetails/web/student-teacher" />
+            <option value="$PROJECT_DIR$/UserDetails/web/user-admin" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>

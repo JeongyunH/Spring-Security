@@ -7,18 +7,24 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.16/6dc192c7f93ec1853f70d59d8a6dcf94eb42866/lombok-1.18.16.jar" />
         </processorPath>
-        <module name="Multi-Chain-Proxy.server-login-custom-filter.main" />
-        <module name="Multi-Chain-Proxy.web-student-teacher.main" />
-        <module name="Multi-Chain-Proxy.server-login-basic.main" />
-        <module name="Multi-Chain-Proxy.server-login-multi-chain.test" />
-        <module name="Multi-Chain-Proxy.server-basic-test.test" />
-        <module name="Multi-Chain-Proxy.server-login-basic.test" />
-        <module name="Multi-Chain-Proxy.server-login-custom-filter.test" />
-        <module name="Multi-Chain-Proxy.server-basic-authentication-test.test" />
-        <module name="Multi-Chain-Proxy.server-login-multi-chain.main" />
-        <module name="Multi-Chain-Proxy.server-basic-authentication-test.main" />
-        <module name="Multi-Chain-Proxy.server-basic-test.main" />
-        <module name="Multi-Chain-Proxy.web-student-teacher.test" />
+        <module name="User-Details.server-login-multi-chain.test" />
+        <module name="User-Details.server-login-userdetails.test" />
+        <module name="User-Details.web-student-teacher.main" />
+        <module name="User-Details.server-basic-test.main" />
+        <module name="User-Details.server-login-basic.main" />
+        <module name="User-Details.server-login-custom-filter.test" />
+        <module name="User-Details.web-user-admin.main" />
+        <module name="User-Details.server-basic-authentication-test.main" />
+        <module name="User-Details.server-basic-test.test" />
+        <module name="User-Details.server-login-basic.test" />
+        <module name="User-Details.server-login-custom-filter.main" />
+        <module name="User-Details.web-user-admin.test" />
+        <module name="User-Details.server-login-multi-chain.main" />
+        <module name="User-Details.comp-user-admin.main" />
+        <module name="User-Details.server-login-userdetails.main" />
+        <module name="User-Details.web-student-teacher.test" />
+        <module name="User-Details.server-basic-authentication-test.test" />
+        <module name="User-Details.comp-user-admin.test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
