@@ -88,6 +88,26 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SessionManagement" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SessionManagement" />
+            <option value="$PROJECT_DIR$/SessionManagement/comp/user-admin" />
+            <option value="$PROJECT_DIR$/SessionManagement/server/basic-authentication-test" />
+            <option value="$PROJECT_DIR$/SessionManagement/server/basic-test" />
+            <option value="$PROJECT_DIR$/SessionManagement/server/login-basic" />
+            <option value="$PROJECT_DIR$/SessionManagement/server/login-custom-filter" />
+            <option value="$PROJECT_DIR$/SessionManagement/server/login-multi-chain" />
+            <option value="$PROJECT_DIR$/SessionManagement/server/login-rememberme" />
+            <option value="$PROJECT_DIR$/SessionManagement/server/login-session-management" />
+            <option value="$PROJECT_DIR$/SessionManagement/server/login-userdetails" />
+            <option value="$PROJECT_DIR$/SessionManagement/web/student-teacher" />
+            <option value="$PROJECT_DIR$/SessionManagement/web/user-admin" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/UserDetails" />
         <option name="modules">
           <set>

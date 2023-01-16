@@ -7,26 +7,28 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.16/6dc192c7f93ec1853f70d59d8a6dcf94eb42866/lombok-1.18.16.jar" />
         </processorPath>
-        <module name="Login-Rememberme.server-login-basic.main" />
-        <module name="Login-Rememberme.server-basic-authentication-test.test" />
-        <module name="Login-Rememberme.server-login-userdetails.test" />
-        <module name="Login-Rememberme.server-login-multi-chain.test" />
-        <module name="Login-Rememberme.comp-user-admin.main" />
-        <module name="Login-Rememberme.server-basic-test.main" />
-        <module name="Login-Rememberme.web-student-teacher.test" />
-        <module name="Login-Rememberme.web-user-admin.main" />
-        <module name="Login-Rememberme.web-user-admin.test" />
-        <module name="Login-Rememberme.server-login-rememberme.main" />
-        <module name="Login-Rememberme.web-student-teacher.main" />
-        <module name="Login-Rememberme.comp-user-admin.test" />
-        <module name="Login-Rememberme.server-basic-test.test" />
-        <module name="Login-Rememberme.server-login-multi-chain.main" />
-        <module name="Login-Rememberme.server-login-userdetails.main" />
-        <module name="Login-Rememberme.server-login-custom-filter.main" />
-        <module name="Login-Rememberme.server-login-custom-filter.test" />
-        <module name="Login-Rememberme.server-login-rememberme.test" />
-        <module name="Login-Rememberme.server-login-basic.test" />
-        <module name="Login-Rememberme.server-basic-authentication-test.main" />
+        <module name="Session-Management.comp-user-admin.main" />
+        <module name="Session-Management.server-login-session-management.main" />
+        <module name="Session-Management.server-basic-authentication-test.main" />
+        <module name="Session-Management.server-login-basic.main" />
+        <module name="Session-Management.web-student-teacher.test" />
+        <module name="Session-Management.server-basic-test.main" />
+        <module name="Session-Management.server-login-multi-chain.main" />
+        <module name="Session-Management.server-login-custom-filter.test" />
+        <module name="Session-Management.comp-user-admin.test" />
+        <module name="Session-Management.web-student-teacher.main" />
+        <module name="Session-Management.server-basic-test.test" />
+        <module name="Session-Management.server-login-multi-chain.test" />
+        <module name="Session-Management.web-user-admin.test" />
+        <module name="Session-Management.server-login-userdetails.test" />
+        <module name="Session-Management.server-login-basic.test" />
+        <module name="Session-Management.server-login-session-management.test" />
+        <module name="Session-Management.server-login-rememberme.test" />
+        <module name="Session-Management.server-login-userdetails.main" />
+        <module name="Session-Management.server-basic-authentication-test.test" />
+        <module name="Session-Management.server-login-rememberme.main" />
+        <module name="Session-Management.server-login-custom-filter.main" />
+        <module name="Session-Management.web-user-admin.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
