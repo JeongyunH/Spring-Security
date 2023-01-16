@@ -54,6 +54,25 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/LoginRememberme" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/LoginRememberme" />
+            <option value="$PROJECT_DIR$/LoginRememberme/comp/user-admin" />
+            <option value="$PROJECT_DIR$/LoginRememberme/server/basic-authentication-test" />
+            <option value="$PROJECT_DIR$/LoginRememberme/server/basic-test" />
+            <option value="$PROJECT_DIR$/LoginRememberme/server/login-basic" />
+            <option value="$PROJECT_DIR$/LoginRememberme/server/login-custom-filter" />
+            <option value="$PROJECT_DIR$/LoginRememberme/server/login-multi-chain" />
+            <option value="$PROJECT_DIR$/LoginRememberme/server/login-rememberme" />
+            <option value="$PROJECT_DIR$/LoginRememberme/server/login-userdetails" />
+            <option value="$PROJECT_DIR$/LoginRememberme/web/student-teacher" />
+            <option value="$PROJECT_DIR$/LoginRememberme/web/user-admin" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/MultiChainProxy" />
         <option name="modules">
           <set>

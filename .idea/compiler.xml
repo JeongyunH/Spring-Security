@@ -7,27 +7,59 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.16/6dc192c7f93ec1853f70d59d8a6dcf94eb42866/lombok-1.18.16.jar" />
         </processorPath>
-        <module name="User-Details.server-login-multi-chain.test" />
-        <module name="User-Details.server-login-userdetails.test" />
-        <module name="User-Details.web-student-teacher.main" />
-        <module name="User-Details.server-basic-test.main" />
-        <module name="User-Details.server-login-basic.main" />
-        <module name="User-Details.server-login-custom-filter.test" />
-        <module name="User-Details.web-user-admin.main" />
-        <module name="User-Details.server-basic-authentication-test.main" />
-        <module name="User-Details.server-basic-test.test" />
-        <module name="User-Details.server-login-basic.test" />
-        <module name="User-Details.server-login-custom-filter.main" />
-        <module name="User-Details.web-user-admin.test" />
-        <module name="User-Details.server-login-multi-chain.main" />
-        <module name="User-Details.comp-user-admin.main" />
-        <module name="User-Details.server-login-userdetails.main" />
-        <module name="User-Details.web-student-teacher.test" />
-        <module name="User-Details.server-basic-authentication-test.test" />
-        <module name="User-Details.comp-user-admin.test" />
+        <module name="Login-Rememberme.server-login-basic.main" />
+        <module name="Login-Rememberme.server-basic-authentication-test.test" />
+        <module name="Login-Rememberme.server-login-userdetails.test" />
+        <module name="Login-Rememberme.server-login-multi-chain.test" />
+        <module name="Login-Rememberme.comp-user-admin.main" />
+        <module name="Login-Rememberme.server-basic-test.main" />
+        <module name="Login-Rememberme.web-student-teacher.test" />
+        <module name="Login-Rememberme.web-user-admin.main" />
+        <module name="Login-Rememberme.web-user-admin.test" />
+        <module name="Login-Rememberme.server-login-rememberme.main" />
+        <module name="Login-Rememberme.web-student-teacher.main" />
+        <module name="Login-Rememberme.comp-user-admin.test" />
+        <module name="Login-Rememberme.server-basic-test.test" />
+        <module name="Login-Rememberme.server-login-multi-chain.main" />
+        <module name="Login-Rememberme.server-login-userdetails.main" />
+        <module name="Login-Rememberme.server-login-custom-filter.main" />
+        <module name="Login-Rememberme.server-login-custom-filter.test" />
+        <module name="Login-Rememberme.server-login-rememberme.test" />
+        <module name="Login-Rememberme.server-login-basic.test" />
+        <module name="Login-Rememberme.server-basic-authentication-test.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Login-Rememverme.comp-user-admin" target="11" />
+      <module name="Login-Rememverme.comp-user-admin.main" target="11" />
+      <module name="Login-Rememverme.comp-user-admin.test" target="11" />
+      <module name="Login-Rememverme.server-basic-authentication-test" target="11" />
+      <module name="Login-Rememverme.server-basic-authentication-test.main" target="11" />
+      <module name="Login-Rememverme.server-basic-authentication-test.test" target="11" />
+      <module name="Login-Rememverme.server-basic-test" target="11" />
+      <module name="Login-Rememverme.server-basic-test.main" target="11" />
+      <module name="Login-Rememverme.server-basic-test.test" target="11" />
+      <module name="Login-Rememverme.server-login-basic" target="11" />
+      <module name="Login-Rememverme.server-login-basic.main" target="11" />
+      <module name="Login-Rememverme.server-login-basic.test" target="11" />
+      <module name="Login-Rememverme.server-login-custom-filter" target="11" />
+      <module name="Login-Rememverme.server-login-custom-filter.main" target="11" />
+      <module name="Login-Rememverme.server-login-custom-filter.test" target="11" />
+      <module name="Login-Rememverme.server-login-multi-chain" target="11" />
+      <module name="Login-Rememverme.server-login-multi-chain.main" target="11" />
+      <module name="Login-Rememverme.server-login-multi-chain.test" target="11" />
+      <module name="Login-Rememverme.server-login-rememberme" target="11" />
+      <module name="Login-Rememverme.server-login-rememberme.main" target="11" />
+      <module name="Login-Rememverme.server-login-rememberme.test" target="11" />
+      <module name="Login-Rememverme.server-login-userdetails" target="11" />
+      <module name="Login-Rememverme.server-login-userdetails.main" target="11" />
+      <module name="Login-Rememverme.server-login-userdetails.test" target="11" />
+      <module name="Login-Rememverme.web-student-teacher" target="11" />
+      <module name="Login-Rememverme.web-student-teacher.main" target="11" />
+      <module name="Login-Rememverme.web-student-teacher.test" target="11" />
+      <module name="Login-Rememverme.web-user-admin" target="11" />
+      <module name="Login-Rememverme.web-user-admin.main" target="11" />
+      <module name="Login-Rememverme.web-user-admin.test" target="11" />
       <module name="LoginCustomFilter.server-basic-test" target="11" />
       <module name="LoginCustomFilter.server-basic-test.main" target="11" />
       <module name="LoginCustomFilter.server-basic-test.test" target="11" />
