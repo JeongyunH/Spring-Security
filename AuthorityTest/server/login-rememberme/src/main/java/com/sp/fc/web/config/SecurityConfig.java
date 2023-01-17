@@ -12,16 +12,11 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.session.SessionRegistry;
-import org.springframework.security.core.session.SessionRegistryImpl;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
-import org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices;
-import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
-import org.springframework.security.web.session.ConcurrentSessionFilter;
+import org.springframework.security.web.authentication.rememberme.*;
+import org.springframework.security.web.context.SecurityContextPersistenceFilter;
 import org.springframework.security.web.session.HttpSessionEventPublisher;
-import org.springframework.security.web.session.SessionManagementFilter;
 
 import javax.servlet.http.HttpSessionEvent;
 import javax.sql.DataSource;
@@ -80,12 +75,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    SessionRegistry sessionRegistry(){
-        SessionRegistryImpl registry = new SessionRegistryImpl();
-        return registry;
-    }
-
-    @Bean
     PersistentTokenRepository tokenRepository(){
         JdbcTokenRepositoryImpl repository = new JdbcTokenRepositoryImpl();
         repository.setDataSource(dataSource);
@@ -104,7 +93,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         spUserService,
                         tokenRepository()
                         );
-        service.setAlwaysRemember(true);
         return service;
     }
 
@@ -113,7 +101,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests(request->
                     request.antMatchers("/").permitAll()
-                            .antMatchers("/admin/**").hasRole("ADMIN")      //FilterSecurityInterceptor..
                             .anyRequest().authenticated()
                 )
                 .formLogin(login->
@@ -131,17 +118,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .rememberMe(r->r
                         .rememberMeServices(rememberMeServices())
                 )
-                .sessionManagement(s->s
-                        .maximumSessions(2)
-                        .maxSessionsPreventsLogin(false)    // false : 기존 세션을 만료, true : 새로온 세션을 만료
-                        .expiredUrl("/session-expired"))
                 ;
     }
 
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring()
-                .antMatchers("/sessions", "/session/expire", "/session-expired")
                 .requestMatchers(
                         PathRequest.toStaticResources().atCommonLocations(),
                         PathRequest.toH2Console()
