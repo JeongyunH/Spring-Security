@@ -6,25 +6,28 @@ import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.access.hierarchicalroles.RoleHierarchy;
 import org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.session.SessionRegistry;
 import org.springframework.security.core.session.SessionRegistryImpl;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.access.AccessDeniedHandlerImpl;
 import org.springframework.security.web.access.ExceptionTranslationFilter;
 import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
-import org.springframework.security.web.session.ConcurrentSessionFilter;
 import org.springframework.security.web.session.HttpSessionEventPublisher;
-import org.springframework.security.web.session.SessionManagementFilter;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSessionEvent;
 import javax.sql.DataSource;
 import java.time.LocalDateTime;
@@ -33,7 +36,10 @@ import java.time.LocalDateTime;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    ExceptionTranslationFilter filter;
+    ExceptionTranslationFilter exceptionTranslationFilter;
+    FilterSecurityInterceptor filterSecurityInterceptor;
+    AccessDeniedHandlerImpl accessDeniedHandler;
+
     private final SpUserService spUserService;
     private final DataSource dataSource;
 
@@ -106,7 +112,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 new PersistentTokenBasedRememberMeServices("hello",
                         spUserService,
                         tokenRepository()
-                        );
+                        ){
+                    @Override
+                    protected Authentication createSuccessfulAuthentication(HttpServletRequest request, UserDetails user) {
+                        return new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword(), null);
+//                        return super.createSuccessfulAuthentication(request, user);
+                    }
+                };
         service.setAlwaysRemember(true);
         return service;
     }
@@ -115,8 +127,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests(request->
-                    request.antMatchers("/").permitAll()
-                            .antMatchers("/admin/**").hasRole("ADMIN")      //FilterSecurityInterceptor..
+                    request
+                            .antMatchers("/", "/error").permitAll()
+                            .antMatchers("/admin/**").hasRole("ADMIN")
                             .anyRequest().authenticated()
                 )
                 .formLogin(login->
@@ -129,15 +142,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .logout(logout->
                         logout.logoutSuccessUrl("/"))
                 .exceptionHandling(error->
-                        error.accessDeniedPage("/access-denied")
+                        error
+//                                .accessDeniedPage("/access-denied")
+                                .accessDeniedHandler(new CustomDeniedHandler())     // 권한 없음
+                                .authenticationEntryPoint(new CustomEntryPoint())   // 인증 실패(로그인 필요)
+
                 )
                 .rememberMe(r->r
                         .rememberMeServices(rememberMeServices())
                 )
-                .sessionManagement(s->s
+                .sessionManagement(
+                        s->s
+//                                .sessionCreationPolicy(p-> SessionCreationPolicy.S)
+                                .sessionFixation(sessionFixationConfigurer -> sessionFixationConfigurer.changeSessionId())
                         .maximumSessions(2)
-                        .maxSessionsPreventsLogin(false)    // false : 기존 세션을 만료, true : 새로온 세션을 만료
-                        .expiredUrl("/session-expired"))
+                        .maxSessionsPreventsLogin(true)
+                        .expiredUrl("/session-expired")
+                )
                 ;
     }
 

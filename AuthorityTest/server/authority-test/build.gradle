@@ -1,10 +1,14 @@
-
+apply from: "../web-common.gradle"
 
 dependencies {
 
-    implementation("$boot:spring-boot-starter-web")
+//    implementation("$boot:spring-boot-starter-web")
+    implementation("$boot:spring-boot-starter-data-jpa")
 
-    testCompile project(":test-web-util")
+    runtime("com.h2database:h2")
 
+//    testCompile project(":test-web-util")
+    compile project(":comp-user-admin")
+    compile project(":web-user-admin")
 }
 
