@@ -146,6 +146,28 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/VotersTest" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/VotersTest" />
+            <option value="$PROJECT_DIR$/VotersTest/comp/user-admin" />
+            <option value="$PROJECT_DIR$/VotersTest/server/authority-test" />
+            <option value="$PROJECT_DIR$/VotersTest/server/basic-authentication-test" />
+            <option value="$PROJECT_DIR$/VotersTest/server/basic-test" />
+            <option value="$PROJECT_DIR$/VotersTest/server/login-basic" />
+            <option value="$PROJECT_DIR$/VotersTest/server/login-custom-filter" />
+            <option value="$PROJECT_DIR$/VotersTest/server/login-multi-chain" />
+            <option value="$PROJECT_DIR$/VotersTest/server/login-rememberme" />
+            <option value="$PROJECT_DIR$/VotersTest/server/login-session-management" />
+            <option value="$PROJECT_DIR$/VotersTest/server/login-userdetails" />
+            <option value="$PROJECT_DIR$/VotersTest/test/web-util" />
+            <option value="$PROJECT_DIR$/VotersTest/web/student-teacher" />
+            <option value="$PROJECT_DIR$/VotersTest/web/user-admin" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
