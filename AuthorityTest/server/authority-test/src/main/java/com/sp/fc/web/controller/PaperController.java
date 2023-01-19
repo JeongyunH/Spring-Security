@@ -3,6 +3,7 @@ package com.sp.fc.web.controller;
 import com.sp.fc.web.service.Paper;
 import com.sp.fc.web.service.PaperService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.User;
@@ -20,7 +21,7 @@ public class PaperController {
     @Autowired
     private PaperService paperService;
 
-    @PreAuthorize("isStudent()")
+//    @PreAuthorize("isStudent()")
     @GetMapping("/mypapers")
     public List<Paper> myPapers(@AuthenticationPrincipal User user){
         return paperService.getMyPapers(user.getUsername());

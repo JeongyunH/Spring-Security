@@ -27,6 +27,7 @@ public class PaperService implements InitializingBean {
         ).collect(Collectors.toList());
     }
 
+
     public Paper getPaper(Long paperId) {
         return paperDB.get(paperId);
     }

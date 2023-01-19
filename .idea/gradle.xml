@@ -5,6 +5,28 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/AfterInvocationManager" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/AfterInvocationManager" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/comp/user-admin" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/server/authority-test" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/server/basic-authentication-test" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/server/basic-test" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/server/login-basic" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/server/login-custom-filter" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/server/login-multi-chain" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/server/login-rememberme" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/server/login-session-management" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/server/login-userdetails" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/test/web-util" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/web/student-teacher" />
+            <option value="$PROJECT_DIR$/AfterInvocationManager/web/user-admin" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/AuthorityTest" />
         <option name="modules">
           <set>
