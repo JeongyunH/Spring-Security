@@ -54,7 +54,7 @@ public class PaperTest extends WebIntegrationTest{
         paperService.setPaper(paper2);
         paperService.setPaper(paper3);
 
-        client = new TestRestTemplate("user1", "1111");
+        client = new TestRestTemplate("primary", "1111");
         ResponseEntity<List<Paper>> response = client.exchange(uri("/paper/getPapersByPrimary"),
                 HttpMethod.GET, null, new ParameterizedTypeReference<List<Paper>>() {
                 });
